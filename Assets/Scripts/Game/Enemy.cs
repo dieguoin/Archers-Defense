@@ -28,7 +28,9 @@ public class Enemy : MonoBehaviour
     private void Awake()
     {
         controlAudio = GetComponent<AudioSource>();
-        enemyAnim = GetComponent<Animator>(); 
+        enemyAnim = GetComponent<Animator>();
+        enemyAnim.enabled = false;
+        enemyAnim.enabled = true;
         player = GameObject.Find("Player").transform.GetChild(0).GetChild(0);
         objective = GameObject.Find("EnemyDestination").transform;
         navMesh = GetComponent<NavMeshAgent>();
