@@ -94,6 +94,7 @@ public class WeaponManager : MonoBehaviour
                     case "arrow":
 
                         currentWeapon.transform.localRotation = thisWeapon.attachRotation.localRotation;
+
                         break;
                     case "bow":
                         initialColliderSize = currentWeapon.GetComponent<BoxCollider>().size;
@@ -120,6 +121,7 @@ public class WeaponManager : MonoBehaviour
                 case "arrow":
 
                     currentWeapon.transform.localRotation = thisWeapon.attachRotation.localRotation;
+
                     break;
                 case "bow":
                     initialColliderSize = currentWeapon.GetComponent<BoxCollider>().size;
@@ -168,7 +170,7 @@ public class WeaponManager : MonoBehaviour
         }
         float dist = Vector3.Project((gameObject.transform.position - StringStartingPoint.position), StringStartingPoint.up).magnitude;
         float frec = (1.0f / 0.3f) * dist;
-        OVRInput.SetControllerVibration(frec, 1.0f, OVRInput.Controller.RTouch);
+        OVRInput.SetControllerVibration(frec / dist, 1.0f, OVRInput.Controller.RTouch);
         StringPoint.transform.localPosition = StringStartingPoint.localPosition + new Vector3(-0.02f * (Mathf.Max(minDistance, Mathf.Min(dist, maxDistance))), 0.0f, 0.0f);
         isPulled = true;
 

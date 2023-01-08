@@ -13,7 +13,7 @@ public class ObjectiveManager : MonoBehaviour
         if (timer < 0)
         {
             timer = SPAWNTIME;
-            GameObject newObjective = Instantiate(objective, new Vector3(Random.Range(0, 10), Random.Range(0, 10), Random.Range(0, 10)), objective.transform.rotation);
+            GameObject newObjective = Instantiate(objective, new Vector3(Random.Range(-10, 10), Random.Range(0, 10), Random.Range(-10, 10)), objective.transform.rotation);
             newObjective.transform.rotation = Quaternion.LookRotation(player.position - newObjective.transform.position);
         }
         timer -= Time.deltaTime;

@@ -67,14 +67,15 @@ public class GameManagement : MonoBehaviour
         Time.timeScale = 1;
         
     }
-    public void LoadMenu()
-    {
-        SceneManager.LoadScene(0);
-    }
-    public void ReloadScene()
+    
+    public void loadScene(int index)
     {
         
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(index);
+    }
+    public int GetScene()
+    {
+        return SceneManager.GetActiveScene().buildIndex;
     }
     private void OnApplicationFocus(bool focus)
     {
