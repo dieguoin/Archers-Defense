@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.31425774, g: 0.40153608, b: 0.6226415, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 3f71e184c7cdbb44a9a811ddcc7b5e44, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: c275b5563e931604fa3eabd19bddef01, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.151
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.30578128, g: 0.30605006, b: 0.3208363, a: 0.151}
+  m_IndirectSpecularColor: {r: 0.32512078, g: 0.35696292, b: 0.3918709, a: 0.151}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3101,9 +3101,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5841528408077932462, guid: 5b085730b34ce6c4594f722ee0f90940, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841528408077932462, guid: 5b085730b34ce6c4594f722ee0f90940, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1080021097}
+    - target: {fileID: 5841528408077932462, guid: 5b085730b34ce6c4594f722ee0f90940, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: loadScene
+      objectReference: {fileID: 0}
     - target: {fileID: 7556751916612787322, guid: 5b085730b34ce6c4594f722ee0f90940, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 3
@@ -3117,9 +3125,21 @@ PrefabInstance:
       value: loadScene
       objectReference: {fileID: 0}
     - target: {fileID: 7569021027899515324, guid: 5b085730b34ce6c4594f722ee0f90940, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569021027899515324, guid: 5b085730b34ce6c4594f722ee0f90940, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1080021097}
+    - target: {fileID: 7569021027899515324, guid: 5b085730b34ce6c4594f722ee0f90940, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: loadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569021027899515324, guid: 5b085730b34ce6c4594f722ee0f90940, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8013446339286847831, guid: 5b085730b34ce6c4594f722ee0f90940, type: 3}
       propertyPath: StringPoint
       value: 
